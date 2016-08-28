@@ -1,0 +1,290 @@
+<!DOCTYPE html> 
+
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">--> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HUMANOID Festival</title>
+    <meta name="description" content="HUMANOID Festival 2016"/>
+    <link rel="stylesheet" href="css/style-jour.css">
+    <meta name="keywords" content=""/>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+
+    <!--Chargement de Bootstrap-->
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="bootstrap/js/carousel.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/timeout.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/filterable.js"></script>
+    
+</head>
+<body class="home prog-day">
+    <div id="sticker" class="menu">
+         <span class="toggle">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+          <div class="menuContent">
+            <ul>
+                <li>
+                    <a class="lang active" href="">FR</a>
+                    <a class="lang" href="">EN</a>
+                </li> 
+              <li class=""><a href="festival.html"> le festival</a></li>
+              <li class="active"><a href="programmation.html"> programmation </a></li>
+              <li><a href="tickets.html"> tickets </a> </li>
+              <li><a href="https://www.facebook.com/humanoidfestival/"> news </a></li>
+              <li><a href="infos.html"> infos pratiques </a> </li>
+            </ul>
+          </div>
+    </div>
+    <div class="headerprog">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logoblue.png" alt="logo humanoid"/></a>
+            </div>
+            <div class="imgprog col-sm-10 col-sm-offset-1">
+                <div class="boxtitle">
+                    <span class="title" id="ancre">programmation</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="partfilter">
+        <div class="container">
+            <div class="prog-choice col-sm-12" >
+                <a class="btn-intervenant col-sm-3 col-sm-offset-3" href="programmation.html#ancre">par intervenant</a> 
+                <a class="btn-jour col-sm-2 active" href="programmation-jour.html#ancre">par jour</a>     
+            </div>
+            <div class="prog-filter col-sm-10 col-sm-offset-1">
+                <ul id="portfolio-filter">
+                    <li><a href="#vendredi" title="" rel="vendredi">vendredi  /</a></li>
+                    <li><a href="#samedi" title="" rel="samedi">samedi  /</a></li>
+                    <li><a href="#dimanche" title="" rel="dimanche">dimanche  /</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+     <!--Grille -->
+    <div class="main">
+        <ul id="og-grid" class="og-grid">
+            <li class="samedi">
+                <a class="" href="" data-largesrc="images/thumbs3/1.jpg" data-title="Abrotech" data-description="Qui n’a jamais rêvé d’avoir un clone qui irait travailler à notre place pendant que nous prendrions le soleil ? Un rêve en passe de devenir réalité avec Abrotech. Ces chercheurs japonais travaillent actuellement sur un prototype de robot à l’image de son utilisateur.">
+                    <div class="description">
+                        <div class="boxtext">
+                            <span class="bigname">Abrotech</span>
+                            <span class="subtitle">14h30-16h30</span>
+                            <p>Gare st sauveur</p>
+                        </div>
+                    </div>
+                    <img src="images/thumbs2/1.jpg" alt="img01"/>
+                </a>
+            </li>
+            <li class="samedi">
+                <a class="" href="" data-largesrc="images/thumbs3/2.jpg" data-title="AJohn Fabrei" data-description="John Fabrei est un inventeur de génie. Son crédo, détourner les objets du quotidien pour en faire des être robotisés totalement loufoques. Une performance live à laquelle chacun est invité à participer en ramenant son vieux téléphone, sa console de jeux vidéo hors d’usage">
+                    <div class="description">
+                        <div class="boxtext">
+                            <span class="bigname">John Fabrei</span>
+                            <span class="subtitle">18h-19h30</span>
+                            <p>Condition Publique</p>
+                        </div>
+                    </div>
+                    <img src="images/thumbs2/2.jpg" alt="John Fabrei"/>
+                </a>
+            </li>
+            <li class="samedi">
+                <a class="" href="" data-largesrc="images/thumbs3/3.jpg" data-title="Miguel Parovla" data-description="SMiguel Parovla est un marionnettiste… Enfin presque. Car ce n’est pas derrière un rideau qu’il tire les ficelles mais grâce à un exosquelette. L’artiste se sert en effet de celui-ci pour mener à la baguette des automates mécaniques à l’humanité surprenante. Un spectacle présenté en ouverture du « Voyage à Nantes » en 2015..">
+                    <div class="description">
+                        <div class="boxtext">
+                            <span class="bigname">miguel parovla</span>
+                            <span class="subtitle"><br>14h00-15h30</span>
+                            <p>Condition publique</p>
+                        </div>
+                    </div>
+                    <img src="images/thumbs2/3.jpg" alt="MiguelParovla"/>
+                </a>
+            </li>
+            <li class="dimanche">
+                <a class="" href="" data-largesrc="images/thumbs3/4.jpg" data-title="L33 - Austin" data-description="L33 – Austin, c’est un collectif de 33 artistes internationaux spécialisés dans le Speed Painting. Tous ont un thème de prédilection : la science-fiction. Humanoïde Festival propose ici un tour du monde d’anticipation à travers une quarantaine d’œuvres exposées.">
+                    <div class="description">
+                        <div class="boxtext">
+                            <span class="bigname">L33 - Austin</span>
+                            <span class="subtitle"><br>16h-18h</span>
+                            <p>gare st sauveur</p>
+                        </div>
+                    </div>
+                    <img src="images/thumbs2/4.jpg" alt="L33Austin"/>
+                </a>
+            </li>
+            <li class="vendredi">
+                <a class="" href="" data-largesrc="images/thumbs3/5.jpg" data-title="bot project" data-description="Robotique : quelles applications pour l’industrie ? Trois équipes de recherche de l’Inria Lille interviendront pour présenter leurs travaux de recherche liés à la cybernétique, en application avec l'industrie.">
+                    <div class="description">
+                        <div class="boxtext">
+                            <span class="bigname">Bot Project</span>
+                            <span class="subtitle"><br>15h-20h</span>
+                            <p>maison folie wazemme</p>
+                        </div>
+                    </div>
+                    <img src="images/thumbs2/5.jpg" alt="BotProject"/>
+                </a>
+            </li>
+            <li class="samedi">
+                <a class="showroom" href="" data-largesrc="images/thumbs3/7.jpg" data-title="Z-machines" data-description="En quelques clics sur Internet, on peut créer une reprise de Stromae ou de Fauve avec une voix métallique. C'est rigolo mais ça ne va pas chercher loin. Les Z-Machines, c'est autre chose : de vrais robots qui jouent en live, sur scène. L'avantage d'une telle formation, c'est que vous ne risquez pas de retrouver la chambre d'hôtel dévastée. Pas de caprices de star et les robots sont d'accord pour jouer n'importe quoi, ce que vous voulez. Sans préférence pour un style ou un autre.">
+                    <div class="description">
+                        <div class="boxtext">
+                            <span class="bigname">Z-machines</span>
+                            <span class="subtitle"><br>21h-22h</span>
+                            <p>maison folie wazemme</p>
+                        </div>
+                    </div>
+                    <img src="images/thumbs2/8.jpg" alt="z-machines"/>
+                </a>
+            </li>
+            <li class="vendredi">
+                <a class="showroom" href="" data-largesrc="images/thumbs3/7.jpg" data-title="BIO-PROTEC" data-description="Jusque très récemment, les prothèses n’étaient encore que de pâles copies du membre perdu ne remplissant que très peu de ses fonctions. Grâce aux progrès de la modélisation médicale et de l’électromécanique, les prothèses bioniques sont en train de changer la donne.">
+                    <div class="description">
+                        <div class="boxtext">
+                            <span class="bigname">Bio-protec</span>
+                            <span class="subtitle"><br>16h-17h30</span>
+                            <p>La condition publique</p>
+                        </div>
+                    </div>
+                    <img src="images/thumbs2/6.jpg" alt="Bio-protec"/>
+                </a>
+            </li>
+            <li class="vendredi">
+                <a class="showroom" href="" data-largesrc="images/thumbs3/8jpg" data-title="Dancing bot" data-description="Dancing Bot, c’est une histoire d’amour dans un monde où les humains et les robots coexistent. Comme un remake de Dirty Dancing, une femme et un robot s’entrainent ensemble pour participer à un spectacle de danse…">
+                    <div class="description">
+                        <div class="boxtext">
+                            <span class="bigname">Dancing bot</span>
+                            <span class="subtitle"><br>18h-19h30</span>
+                            <p>gare st sauveur</p>
+                        </div>
+                    </div>
+                    <img src="images/thumbs2/9.jpg" alt="z-machines"/>
+                </a>
+            </li>
+            <li class="samedi">
+                <a class="showroom" href="" data-largesrc="images/thumbs3/9.jpg" data-title="Proto-stream" data-description="Cette start-up lyonnaise développe depuis 2014 des « cobots » : une catégorie de robots dédiés à la manipulation d’objets en collaboration avec un opérateur humain. Un marché qui explose : selon une étude menée en 2015 par Barclays, 2500 cobots étaient vendus dans le monde en 2014, soit 90% de plus qu’en 2013.">
+                    <div class="description">
+                        <div class="boxtext">
+                            <span class="bigname">proto-stream</span>
+                            <span class="subtitle"><br>17h-18h</span>
+                            <p> la Condition publique</p>
+                        </div>
+                    </div>
+                    <img src="images/thumbs2/10.jpg" alt="proto-stream"/>
+                </a>
+            </li>
+            <li class="samedi">
+                <a class="showroom" href="" data-largesrc="images/thumbs3/11.jpg" data-title="Jane Masoni" data-description="Selon le physicien Stephen Hawking, cela pourrait « mettre fin à l’humanité ». L’intelligence artificielle se développe aujourd’hui dans tous les domaines : de la santé à l’automobile en passant par l’assurance. Le marché est immense et très prometteur. Les progrès réalisés en la matière sont incessants à tel point qu’aujourd’hui, beaucoup de scientifiques parlent d’une machine capable de remplacer l’être humain. Entre interrogations, inquiétudes et progrès, Jane Mason exposera tous les aspects de cette technologie qui, ça ne fait aucun doute, révolutionnera le quotidien de demain.">
+                    <div class="description">
+                        <div class="boxtext">
+                            <span class="bigname">Jane Masoni</span>
+                            <span class="subtitle"><br>15h30-16h30</span>
+                            <p>maison folie wazemme</p>
+                        </div>
+                    </div>
+                    <img src="images/thumbs2/11.jpg" alt="proto-stream"/>
+                </a>
+            </li>
+            <li class="vendredi">
+                <a class="showroom" href="" data-largesrc="images/thumbs3/12.jpg" data-title="Patrick Harno" data-description="A travers ses dessins, Patrick Harno s’intéresse au monde de l’après. Depuis 10 ans, il suit les innovations et utilise le crayon pour transposer ce que sera demain. Un voyage surprenant à travers un passé-futur proche.">
+                    <div class="description">
+                        <div class="boxtext">
+                            <span class="bigname">Patrick Harno</span>
+                            <span class="subtitle"><br>13h30-15h</span>
+                            <p>la condition publique</p>
+                        </div>
+                    </div>
+                    <img src="images/thumbs2/12.jpg" alt="patrick harno"/>
+                </a>
+            </li>
+            <li class="dimanche">
+                <a class="showroom" href="zora bots" data-largesrc="images/thumbs3/6.jpg" data-title="metamorphis" data-description="A quoi ressemblera l’homme du future ? C’est à cette question que propose de répondre le metteur en scène Jacque Dewit à travers une pièce de théâtre tout en poésie et philosophie. Un voyage dans le temps incroyable pour tout les publics ! ">
+                    <div class="description">
+                        <div class="boxtext">
+                            <span class="bigname">metamorphis</span>
+                            <span class="subtitle"><br>19h30-20h</span>
+                            <p>maison folie wazemme.</p>
+                        </div>
+                    </div>
+                    <img src="images/thumbs2/6.jpg" alt="zorabots"/>
+                </a>
+            </li>
+        </ul>
+    </div>  
+    <script src="js/grid.js"></script>
+    <script>
+        $(function() {
+            Grid.init();
+        });
+    </script>      
+    <footer> 
+        <div class="container">
+            <div class="social col-sm-2 col-lg-2">
+                <ul> 
+                    <li><a href="#"><img src="images/facebook.png" /></a></li>
+                    <li><a href="#"><img src="images/pinterest.png" /></a></li>
+                    <li><a href="#"><img src="images/twitter.png" /></a></li>
+                </ul>
+                <img class="logo" a href="index.html" src="images/logo-footer.png"/>
+            </div>
+            <div class="links col-sm-3 col-lg-2 col-lg-offset-1">
+                <div class="title">
+                a propos du festival
+                </div>
+                <ul> 
+                    <li><a href="#">contactez-nous</a></li>
+                    <li><a href="#">devenir b&eacute;n&eacute;vole</a></li>
+                    <li><a href="#">espace presse</a></li>
+                </ul>
+            </div>
+            <div class="links col-sm-3 col-lg-2">
+                <div class="title">
+                nos partenaires
+                </div>
+                <ul> 
+                    <li><a href="#">liste des sponsors</a></li>
+                    <li><a href="#">a propos de la mel</a></li>
+                </ul>
+            </div>
+            <div class="links col-sm-3 col-lg-2">
+                <div class="title">
+                mentions l&eacute;gales
+                </div>
+                <ul> 
+                    <li><a href="#">politique de confidentialit&eacute;</a></li>
+                    <li><a href="#">conditions g&eacute;n&eacute;rales</a></li>
+                </ul>
+            </div>
+            <div class="newsletter col-sm-12 col-lg-3">
+                <div class="title">
+                recevoir la newsletter
+                </div>
+                <form action="inscription.html">
+                    <input type="email" value="votre e-mail"/>
+                    <input type="submit" value=" "/>
+                </form> 
+            </div>
+        </div>
+        <div class="end-voodoo">
+            <span class="signature">conception & réalisation :</span>
+            <a href="http://www.agence-voodo.fr/"><img src="images/voodoo.png" alt="logo voodoo"/></a>
+        </div>    
+    </footer>
+</body>

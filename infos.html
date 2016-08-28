@@ -1,0 +1,292 @@
+<!DOCTYPE html> 
+
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">--> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HUMANOID Festival</title>
+    <meta name="description" content="HUMANOID Festival 2016"/>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="keywords" content=""/>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+
+    <!--Chargement de Bootstrap-->
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="bootstrap/js/carousel.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/timeout.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+   
+    
+
+
+</head>
+<body class="home infos">
+    <div id="sticker" class="menu">
+         <span class="toggle">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+          <div class="menuContent">
+            <ul>
+                 <li>
+                    <a class="lang active" href="">FR</a>
+                    <a class="lang" href="">EN</a>
+                </li> 
+              <li><a href="festival.html"> le festival</a></li>
+              <li class=""><a href="programmation.html"> programmation </a></li>
+              <li><a href="tickets.html"> tickets </a> </li>
+              <li><a href="#"> news </a></li>
+              <li class="active"><a href="infos.html"> infos pratiques </a> </li>
+            </ul>
+          </div>
+    </div>
+    <div class="headerinfos">
+        <div class="layer layer1" data-type="parallax" data-depth="0.10">
+        </div>
+        <div class="container">
+            <div class="logo col-sm-2">
+                <a href="index.html"><img src="images/logo.png" alt="logo humanoid"/></a>
+            </div>
+            <div class="imginfos col-sm-7">
+                <div class="boxinfos">
+                   <span class="title">infos &nbsp;pratiques</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="infolieux">
+        <div class="container full">
+            <div class="partleft col-sm-5 col-sm-offset-2 col-lg-4 col-lg-offset-3">
+                <span class="col-sm-12 serendre"> Comment se rendre sur les différents lieux ? </span>
+                <div class="espaces col-sm-12">
+                    <img class="logosalle mfw col-sm-3" src="images/mfw.jpg"/>
+                     <ul class="col-sm-6 col-sm-offset-1">
+                        <li><span class="indicbold">En metro</span> ligne 2, arrêt Wazemme</li>
+                        <li><span class="indicbold">En bus </span> ligne 2, arrêt Wazemme</li>
+                        <li><span class="indicbold">En voiture</span> ligne 2, arrêt Wazemme</li>
+                    </ul>
+                </div>
+                <div class="espaces col-sm-12">
+                    <img class="logosalle conditionpub col-sm-2" src="images/conditionpub.jpg"/>
+                     <ul class="col-sm-6 col-sm-offset-1">
+                        <li><span class="indicbold">En metro</span> ligne 2, arrêt Wazemme</li>
+                        <li><span class="indicbold">En bus </span> ligne 2, arrêt Wazemme</li>
+                        <li><span class="indicbold">En voiture</span> ligne 2, arrêt Wazemme</li>
+                    </ul>
+                </div>
+                <div class="espaces col-sm-12">
+                    <img class="logosalle saintsauveur col-sm-2" src="images/saintsauveur.jpg"/>
+                     <ul class="col-sm-6 col-sm-offset-1">
+                        <li><span class="indicbold">En metro</span> ligne 2, arrêt Wazemme</li>
+                        <li><span class="indicbold">En bus </span> ligne 2, arrêt Wazemme</li>
+                        <li><span class="indicbold">En voiture</span> ligne 2, arrêt Wazemme</li>
+                    </ul>
+                </div> 
+                <div class="liens-transports col-sm-12">
+                    <span class="indicbold"> Infos bus et métro : </span>
+                    <a class="link-transports" href="https://www.transpole.fr/"> www.transpole.fr&nbsp;&nbsp;&nbsp;</a>
+                    <span class="indicbold"> Infos Vlille : </span>
+                    <a class="link-transports" href="http://www.vlille.fr/" >&nbsp; www.vlille.fr</a>
+                </div>
+            </div>
+            <div class="partmap col-sm-5">
+                <div id="map">
+                    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWA1Aj17aIgfzos4l7kfPt5bolAqkeOTw"></script>
+                    <script type="text/javascript">
+                        // When the window has finished loading create our google map below
+                        google.maps.event.addDomListener(window, 'load', init);
+                    
+                        function init() {
+                            // Basic options for a simple Google Map
+                            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                            var mapOptions = {
+                                // How zoomed in you want the map to start at (always required)
+                                zoom: 11,
+
+                                // The latitude and longitude to center the map (always required)
+                                center: new google.maps.LatLng(50.6246269, 3.04838570000004), // New York
+
+                                // How you would like to style the map. 
+                                // This is where you would paste any style found on Snazzy Maps.
+                                styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+                            };
+
+                            // Get the HTML DOM element that will contain your map 
+                            // We are using a div with id="map" seen below in the <body>
+                            var mapElement = document.getElementById('map');
+
+                            // Create the Google Map using our element and options defined above
+                            var map = new google.maps.Map(mapElement, mapOptions);
+
+                            // Let's also add a marker while we're at it
+                            var image = 'images/marqueur.png';
+                            
+                            var contentString1 = '<div id="content">'+
+                                '<div id="siteNotice">'+
+                                '</div>'+
+                                '<img src="images/mfw.jpg" alt="logo maison folie wazemme"/>'+
+                                '<p>70 rue des Sarrazins - 59000 Lille <br>Tel : 0320785633 </p>'+
+                                '</div>'+
+                                '</div>';
+
+                            var infowindow1 = new google.maps.InfoWindow({
+                              content: contentString1
+                            });
+
+                            var beachMarker1 = new google.maps.Marker({
+                                position: new google.maps.LatLng(50.6246269, 3.04838570000004),
+                                map: map,
+                                icon: image
+
+                             });
+                             
+                            beachMarker1.addListener('click', function() {
+                               infowindow1.open(map, beachMarker1);
+                            });
+                             
+
+                             var contentString2 = '<div id="content">'+
+                                '<div id="siteNotice">'+
+                                '</div>'+
+                                '<img src="images/conditionpub.jpg" alt="logo condition publique"/>'+
+                                '<p>14 Place du Général Faidherbe - 59100 Roubaix <br>Tel : 03 28 33 57 57 </p>'+
+                                '</div>'+
+                                '</div>';
+                              
+
+                            var infowindow2 = new google.maps.InfoWindow({
+                              content: contentString2
+                            });
+                            
+                            var beachMarker2 = new google.maps.Marker({
+                                position: new google.maps.LatLng(50.690689, 3.189557),
+                                map: map,
+                                icon: image
+                             });
+                             
+                             beachMarker2.addListener('click', function() {
+                               infowindow2.open(map, beachMarker2);
+                            });
+                             
+                             
+                            var contentString3 = '<div id="content">'+
+                                '<div id="siteNotice">'+
+                                '</div>'+
+                                '<img src="images/saintsauveur.jpg" alt="logo saintsauveur"/>'+
+                                '<p>Boulevard Jean Baptiste Lebas - 59000 Lille <br>Tel : 0320785633 </p>'+
+                                '</div>'+
+                                '</div>';
+
+
+                            var infowindow3 = new google.maps.InfoWindow({
+                              content: contentString3
+                            });
+                            
+                            var beachMarker3 = new google.maps.Marker({
+                                position: new google.maps.LatLng(50.627117, 3.072181),
+                                map: map,
+                                icon: image
+                             });
+                             
+                             beachMarker3.addListener('click', function() {
+                               infowindow3.open(map, beachMarker3);
+                             });
+                             
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="partcontact">
+        <div class="container">
+            <div class="boxcontact col-sm-12">
+                <div class="titlecontact">
+                    <span>nous contacter</span>
+                </div>
+                <div class="card-humanoid col-sm-3">
+                    <img class="logocard" src="images/logo.png"/>
+                    <div class="textcontact">
+                        <p>Humanoid Festival <br>10 rue de Paris - 59000 Lille<br>contact@humanoid-fest.fr </p>
+                    </div>
+                </div>
+                <div class="formulaire col-sm-7 col-sm-offset-1">
+                    <form>
+                        <input type="text" value="NOM" />
+                        <input type="text" value="PRENOM" />
+                        <input type="email" value="EMAIL" />
+                        <input type="text" value="SUJET" />
+                        <textarea>Votre message...</textarea>
+                        <input type="submit" value="ENVOYER VOTRE MESSAGE" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer> 
+        <div class="container">
+            <div class="social col-sm-2 col-lg-2">
+                <ul> 
+                    <li><a href="#"><img src="images/facebook.png" /></a></li>
+                    <li><a href="#"><img src="images/pinterest.png" /></a></li>
+                    <li><a href="#"><img src="images/twitter.png" /></a></li>
+                </ul>
+                <img class="logo" a href="index.html" src="images/logo-footer.png"/>
+            </div>
+            <div class="links col-sm-3 col-lg-2 col-lg-offset-1">
+                <div class="title">
+                a propos du festival
+                </div>
+                <ul> 
+                    <li><a href="#">contactez-nous</a></li>
+                    <li><a href="#">devenir b&eacute;n&eacute;vole</a></li>
+                    <li><a href="#">espace presse</a></li>
+                </ul>
+            </div>
+            <div class="links col-sm-3 col-lg-2">
+                <div class="title">
+                nos partenaires
+                </div>
+                <ul> 
+                    <li><a href="#">liste des sponsors</a></li>
+                    <li><a href="#">a propos de la mel</a></li>
+                </ul>
+            </div>
+            <div class="links col-sm-3 col-lg-2">
+                <div class="title">
+                mentions l&eacute;gales
+                </div>
+                <ul> 
+                    <li><a href="#">politique de confidentialit&eacute;</a></li>
+                    <li><a href="#">conditions g&eacute;n&eacute;rales</a></li>
+                </ul>
+            </div>
+            <div class="newsletter col-sm-12 col-lg-3">
+                <div class="title">
+                recevoir la newsletter
+                </div>
+                <form action="inscription.html">
+                    <input type="email" value="votre e-mail"/>
+                    <input type="submit" value=" "/>
+                </form> 
+            </div>
+        </div>
+        <div class="end-voodoo">
+            <span class="signature">conception & réalisation :</span>
+            <a href="http://www.agence-voodo.fr/"><img src="images/voodoo.png" alt="logo voodoo"/></a>
+        </div>  
+    </footer>
+</body>
